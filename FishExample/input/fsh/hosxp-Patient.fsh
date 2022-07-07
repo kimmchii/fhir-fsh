@@ -1,4 +1,3 @@
-Alias:   SCT = http://snomed.info/sct
 Alias:   FR = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias:   LANG = urn:ietf:bcp:47
 Alias:   TELE = http://hl7.org/fhir/contact-point-systemurn:ietf:bcp:47
@@ -11,7 +10,7 @@ Title:          "Patient(Hosxp)"
 Description:    "Profile using in Hosxp"
 
 //Patient's identifier method: passport and cid
-* identifier 1..1 MS
+* identifier 1..* MS
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
@@ -58,7 +57,6 @@ Description:    "Profile using in Hosxp"
 * communication.language 1..1
 * communication.language from Language (extensible)
 
-// * extension contains Blood named group 0..1
 
 // Contact
 * contact 0..* 
@@ -71,22 +69,6 @@ Description:    "Profile using in Hosxp"
 * contact.address 0..1
 
 
-
-
-// Extension:   Blood
-// Id:          phenotype
-// Title:       "Blood group: phenotype"
-// Description: "Categorize the blood group by using phenotype"
-// * value[x] only CodeableConcept
-// * valueCodeableConcept from Warfar (extensible)
-
-// ValueSet:    Warfar
-// Title:       "phenotype"
-// Id:          warfarin
-// Description: "Codes describing blood group using phenotype, taken from SNOMED-CT."
-// * codes from system SCT where concept is-a #112143006  "Blood group(phenotype)"
-
-
 ValueSet:   Related
 Title:      "relationship Type"
 Id:         relatedPeople
@@ -95,7 +77,7 @@ Id:         relatedPeople
 ValueSet:   Language
 Title:      "communication language"
 Id:         language
-* codes from system LANG
+* codes from system LANG 
 
 ValueSet:   ConatactPointSystem
 Title:      "type of contact"

@@ -4,7 +4,7 @@ Profile:        BloodGroup
 Parent:         Practitioner
 Id:             BloodGroup
 Title:          "BloodGroup"
-Description:    "A profile on the Practitioner resource for veterinarians. In the US, vets do not have National Provider Numbers."
+Description:    "A profile on the Obaservation resource blood group."
 
 * extension contains Blood named group 0..1
 // Extension:   Blood

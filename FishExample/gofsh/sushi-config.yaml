@@ -1,0 +1,8 @@
+canonical: http://example.org/fhir/fish
+fhirVersion: 4.0.1
+FSHOnly: true
+applyExtensionMetadataToRoot: false
+id: fish
+name: FishImplementationGuide
+status: draft
+version: 0.1.0
