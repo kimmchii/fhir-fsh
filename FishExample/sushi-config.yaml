@@ -9,7 +9,7 @@ version: 0.1.0
 name: FishImplementationGuide
 title: Fish Implementation Guide
 status: draft
-FSHOnly: true
+#FSHOnly: true
 publisher: James Tuna
 contact:
   - name: Bill Cod
