@@ -18,6 +18,7 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
     NeuroSurgical 16..16
 
 
+// Barthel slice -> reslicing
 
 * component[Barthel] ^slicing.discriminator.type = #pattern
 * component[Barthel] ^slicing.discriminator.path = "code"
@@ -36,6 +37,7 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
     BA_Q10_BLADDER 1..1 
 
 
+// Swallow slice -> reslicing
 
 * component[Swallow] ^slicing.discriminator.type = #pattern
 * component[Swallow] ^slicing.discriminator.path = "code"
@@ -56,6 +58,7 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
     SW_Q12_ 1..1  
 
 
+// Nihss slice -> reslicing
 
 * component[Nihss] ^slicing.discriminator.type = #pattern
 * component[Nihss] ^slicing.discriminator.path = "code"
@@ -77,6 +80,7 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
     NI_Q11_NEGLECT 1..1 
 
 
+// NeuroSurgical slice -> reslicing
 
 * component[NeuroSurgical] ^slicing.discriminator.type = #pattern
 * component[NeuroSurgical] ^slicing.discriminator.path = "code"
