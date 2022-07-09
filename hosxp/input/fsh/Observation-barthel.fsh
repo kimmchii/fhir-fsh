@@ -1,9 +1,9 @@
 Alias: LOINC = http://loinc.org
 
-Profile: Sad
+Profile: ObservationDiag
 Parent:  Observation
-Id:      observation-Sad
-Description: "Observation the patient for diagnosis"
+Id:      observation-Diag
+Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Neurosurgical"
 
 
 * component ^slicing.discriminator.type = #pattern
