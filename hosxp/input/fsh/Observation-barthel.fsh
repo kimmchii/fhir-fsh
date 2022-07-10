@@ -5,12 +5,11 @@ Parent:  Observation
 Id:      observation-Diag
 Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Neurosurgical"
 
-
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component ^slicing.description = "test"
-
+* component ^slicing.ordered = true
 * component contains 
     Barthel 10..10 and 
     Swallow 12..12 and
@@ -24,8 +23,9 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
 * component[Barthel] ^slicing.discriminator.path = "code"
 * component[Barthel] ^slicing.rules = #open
 * component[Barthel] ^slicing.description = "test"
+* component[Barthel] ^slicing.ordered = true
 * component[Barthel] contains
-    BA_Q1_FEDDING 1..1 and 
+    BA_Q1_FEEDING 1..1 and 
     BA_Q2_TRANSFER 1..1 and 
     BA_Q3_GROOM 1..1 and 
     BA_Q4_TOILET 1..1 and 
@@ -43,6 +43,7 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
 * component[Swallow] ^slicing.discriminator.path = "code"
 * component[Swallow] ^slicing.rules = #open
 * component[Swallow] ^slicing.description = "test"
+* component[Swallow] ^slicing.ordered = true
 * component[Swallow] contains
     SW_Q1_ 1..1 and 
     SW_Q2_ 1..1 and 
@@ -64,6 +65,7 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
 * component[Nihss] ^slicing.discriminator.path = "code"
 * component[Nihss] ^slicing.rules = #open
 * component[Nihss] ^slicing.description = "test"
+* component[Nihss] ^slicing.ordered = true
 * component[Nihss] contains
     NI_Q1A_CONSCIOUSNESS 1..1 and
     NI_Q1B_QUESTIONS 1..1 and
@@ -86,6 +88,7 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
 * component[NeuroSurgical] ^slicing.discriminator.path = "code"
 * component[NeuroSurgical] ^slicing.rules = #open
 * component[NeuroSurgical] ^slicing.description = "test"
+* component[NeuroSurgical] ^slicing.ordered = true
 * component[NeuroSurgical] contains
     NE_Q1_E 1..1 and
     NE_Q2_V 1..1 and
@@ -103,5 +106,4 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
     NE_Q14_ArmR 1..1 and
     NE_Q15_LegL 1..1 and
     NE_Q16_LegR 1..1 
-
-
+    
