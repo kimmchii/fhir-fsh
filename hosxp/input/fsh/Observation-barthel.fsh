@@ -5,13 +5,13 @@ Parent:  Observation
 Id:      observation-Diag
 Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Neurosurgical"
 
-* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component ^slicing.description = "test"
 * component ^slicing.ordered = true
 * component contains 
-    Barthel 10..10 and 
+    Barthel 11..11 and 
     Swallow 12..12 and
     Nihss 13..13 and
     NeuroSurgical 16..16
@@ -19,7 +19,7 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
 
 // Barthel slice -> reslicing
 
-* component[Barthel] ^slicing.discriminator.type = #pattern
+* component[Barthel] ^slicing.discriminator.type = #value
 * component[Barthel] ^slicing.discriminator.path = "code"
 * component[Barthel] ^slicing.rules = #open
 * component[Barthel] ^slicing.description = "test"
@@ -34,12 +34,25 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
     BA_Q7_STAIRS 1..1 and 
     BA_Q8_DRESSING 1..1 and 
     BA_Q9_BOWAL 1..1 and 
-    BA_Q10_BLADDER 1..1 
+    BA_Q10_BLADDER 1..1 and
+    BA_Q11_TotalScore 1..1
+
+* component[Barthel][BA_Q1_FEEDING].code = LOINC#83184-2 "Feeding"
+* component[Barthel][BA_Q2_TRANSFER].code = LOINC#83185-9 "Transfer"
+* component[Barthel][BA_Q3_GROOM].code = LOINC#96767-9 "Grooming"
+* component[Barthel][BA_Q4_TOILET].code = LOINC#83183-4 "Toilet Use"
+* component[Barthel][BA_Q5_BATH].code = LOINC#83181-8 "Bathing"
+* component[Barthel][BA_Q6_MOBILITY].code = LOINC#83186-7 "Mobility"
+* component[Barthel][BA_Q7_STAIRS].code = LOINC#96758-8 "Stairs"
+* component[Barthel][BA_Q8_DRESSING].code = LOINC#83182-6 "Dressing"
+* component[Barthel][BA_Q9_BOWAL].code = LOINC#96759-6 "Bowels"
+* component[Barthel][BA_Q10_BLADDER].code = LOINC#96760-4 "Bladder"
+* component[Barthel][BA_Q11_TotalScore].code = LOINC#96761-2 "Total score Barthel Index"
 
 
-// Swallow slice -> reslicing
 
-* component[Swallow] ^slicing.discriminator.type = #pattern
+
+* component[Swallow] ^slicing.discriminator.type = #value
 * component[Swallow] ^slicing.discriminator.path = "code"
 * component[Swallow] ^slicing.rules = #open
 * component[Swallow] ^slicing.description = "test"
@@ -61,7 +74,7 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
 
 // Nihss slice -> reslicing
 
-* component[Nihss] ^slicing.discriminator.type = #pattern
+* component[Nihss] ^slicing.discriminator.type = #value
 * component[Nihss] ^slicing.discriminator.path = "code"
 * component[Nihss] ^slicing.rules = #open
 * component[Nihss] ^slicing.description = "test"
@@ -84,7 +97,7 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
 
 // NeuroSurgical slice -> reslicing
 
-* component[NeuroSurgical] ^slicing.discriminator.type = #pattern
+* component[NeuroSurgical] ^slicing.discriminator.type = #value
 * component[NeuroSurgical] ^slicing.discriminator.path = "code"
 * component[NeuroSurgical] ^slicing.rules = #open
 * component[NeuroSurgical] ^slicing.description = "test"
@@ -106,4 +119,4 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
     NE_Q14_ArmR 1..1 and
     NE_Q15_LegL 1..1 and
     NE_Q16_LegR 1..1 
-    
+
