@@ -9,7 +9,8 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
 * extension contains Swallow named SwaTypes 1..1
 * extension contains Nihss named NihTypes 1..1
 * extension contains Neurosurgical named NeuTypes 1..1
-* component.extension[Barthel].valueCodeableConcept = LOINC#8314-2 
+* extension[Barthel].url contains
+    q 1..1
 Extension: Barthel
 Id:        Barthel-type
 Title:     "Barthel"
