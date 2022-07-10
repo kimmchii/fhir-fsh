@@ -5,7 +5,7 @@ Parent:  Observation
 Id:      observation-Diag
 Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Neurosurgical"
 
-* component ^slicing.discriminator.type = #value
+* component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component ^slicing.description = "test"
@@ -18,8 +18,7 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
 
 
 // Barthel slice -> reslicing
-
-* component[Barthel] ^slicing.discriminator.type = #value
+* component[Barthel] ^slicing.discriminator.type = #pattern
 * component[Barthel] ^slicing.discriminator.path = "code"
 * component[Barthel] ^slicing.rules = #open
 * component[Barthel] ^slicing.description = "test"
@@ -52,7 +51,7 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
 
 
 
-* component[Swallow] ^slicing.discriminator.type = #value
+* component[Swallow] ^slicing.discriminator.type = #pattern
 * component[Swallow] ^slicing.discriminator.path = "code"
 * component[Swallow] ^slicing.rules = #open
 * component[Swallow] ^slicing.description = "test"
@@ -74,7 +73,7 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
 
 // Nihss slice -> reslicing
 
-* component[Nihss] ^slicing.discriminator.type = #value
+* component[Nihss] ^slicing.discriminator.type = #pattern
 * component[Nihss] ^slicing.discriminator.path = "code"
 * component[Nihss] ^slicing.rules = #open
 * component[Nihss] ^slicing.description = "test"
@@ -97,7 +96,7 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
 
 // NeuroSurgical slice -> reslicing
 
-* component[NeuroSurgical] ^slicing.discriminator.type = #value
+* component[NeuroSurgical] ^slicing.discriminator.type = #pattern
 * component[NeuroSurgical] ^slicing.discriminator.path = "code"
 * component[NeuroSurgical] ^slicing.rules = #open
 * component[NeuroSurgical] ^slicing.description = "test"
