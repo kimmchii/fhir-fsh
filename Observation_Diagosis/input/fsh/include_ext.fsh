@@ -1,5 +1,3 @@
-Alias: LOINC = http://loinc.org
-
 Extension: Barthel
 Id:        Barthel-type
 Title:     "Barthel"
