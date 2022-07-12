@@ -5,16 +5,17 @@ Id:        Barthel-type
 Title:     "Barthel"
 * extension contains 
     feeding 1..1 and 
-    transfer 1..1 and 
-    groom 1..1 and 
-    toilet_use 1..1 and 
-    bath 1..1 and 
-    mobility 1..1 and 
-    stairs 1..1 and 
-    dressing 1..1 and 
-    bowels 1..1 and 
-    bladder 1..1 and
-    totalscore_barthel 1..1
+    transfer 1..1 
+    // groom 1..1 and 
+    // toilet_use 1..1 and 
+    // bath 1..1 and 
+    // mobility 1..1 and 
+    // stairs 1..1 and 
+    // dressing 1..1 and 
+    // bowels 1..1 and 
+    // bladder 1..1 and
+    // totalscore_barthel 1..1
+
 
 // ValueSet: BarQues 
 // Title:    "barthel question"
@@ -36,32 +37,32 @@ Title:     "Barthel"
 * extension[transfer].value[x] only Coding
 * extension[transfer].valueCoding from Transfer (required)
 
-* extension[groom].value[x] only Coding
-* extension[groom].valueCoding from Groom (required)
+// * extension[groom].value[x] only Coding
+// * extension[groom].valueCoding from Groom (required)
 
-* extension[toilet_use].value[x] only Coding
-* extension[toilet_use].valueCoding from  ToiletUse (required)
+// * extension[toilet_use].value[x] only Coding
+// * extension[toilet_use].valueCoding from  ToiletUse (required)
 
-* extension[bath].value[x] only Coding
-* extension[bath].valueCoding from Bath (required)
+// * extension[bath].value[x] only Coding
+// * extension[bath].valueCoding from Bath (required)
 
-* extension[mobility].value[x] only Coding
-* extension[mobility].valueCoding from  Mobility (required)
+// * extension[mobility].value[x] only Coding
+// * extension[mobility].valueCoding from  Mobility (required)
 
-* extension[stairs].value[x] only Coding
-* extension[stairs].valueCoding from Stairs (required)
+// * extension[stairs].value[x] only Coding
+// * extension[stairs].valueCoding from Stairs (required)
 
-* extension[dressing].value[x] only Coding
-* extension[dressing].valueCoding from Dressing (required)
+// * extension[dressing].value[x] only Coding
+// * extension[dressing].valueCoding from Dressing (required)
 
-* extension[bowels].value[x] only Coding
-* extension[bowels].valueCoding from Bowels (required)
+// * extension[bowels].value[x] only Coding
+// * extension[bowels].valueCoding from Bowels (required)
 
-* extension[bladder].value[x] only Coding
-* extension[bladder].valueCoding from  Bladder (required)
+// * extension[bladder].value[x] only Coding
+// * extension[bladder].valueCoding from  Bladder (required)
 
-* extension[totalscore_barthel].value[x] only Coding
-* extension[totalscore_barthel].valueString 
+// * extension[totalscore_barthel].value[x] only Coding
+// * extension[totalscore_barthel].valueString 
 
 // * extension[].value[x] only Coding
 // * extension[].valueCoding from  (required)

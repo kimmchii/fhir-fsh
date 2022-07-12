@@ -16,9 +16,18 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
 * component.extension ^slicing.description = "try"
 * component.extension ^slicing.ordered = false
 * component.extension contains 
-    Barthel named Ba 1..1 and
-    Swallow named Sw 1..1 and
-    Nihss named Ni 1..1 and
-    Neurosurgical named Ne 1..1 
+    Barthel named Ba 1..1 
+    // Swallow named Sw 1..1 and
+    // Nihss named Ni 1..1 and
+    // Neurosurgical named Ne 1..1 
 
+
+Instance:   Mess
+InstanceOf: ObsDiag
+* status = #final
+* code.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" 
+* code.coding.code = #survey
+* component.code = LOINC#96762-0
+* component.extension[Ba].extension[feeding].valueCoding = LOINC#LA12302-8 
+* component.extension[Ba].extension[transfer].valueCoding = LOINC#LA12303-6 
 
