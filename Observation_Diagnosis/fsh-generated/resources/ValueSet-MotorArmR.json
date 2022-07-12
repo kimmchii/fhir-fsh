@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MotorArmR",
+  "id": "MotorArmR",
+  "title": "MotorArmR",
+  "description": "Motor arm Right arm [NIH Stroke Scale]",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/MotorArmR",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA18456-6",
+            "display": "0 - No drift; limb holds 90 (or 45) degrees for full 10 seconds"
+          },
+          {
+            "code": "LA18457-4",
+            "display": "1 - Drift; limb holds 90 (or 45) degrees, but drifts down before full 10 seconds; does not hit bed or other support"
+          },
+          {
+            "code": "LA18458-2",
+            "display": "2 - Some effort against gravity; limb cannot get to or maintain (if cued) 90 (or 45) degrees, drifts down to bed, but has some effort against gravity"
+          },
+          {
+            "code": "LA18459-0",
+            "display": "3 - No effort against gravity; limb falls"
+          },
+          {
+            "code": "LA18460-8",
+            "display": "4 - No movement"
+          },
+          {
+            "code": "LA18461-6",
+            "display": "UN - Amputation or joint fusion, explain:"
+          }
+        ]
+      }
+    ]
+  }
+}

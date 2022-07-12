@@ -1,0 +1,768 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Nihss-type",
+  "url": "http://example.org/fhir/fish/StructureDefinition/Nihss-type",
+  "version": "0.1.0",
+  "name": "Nihss",
+  "title": "Nihss",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Nihss"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 16
+      },
+      {
+        "id": "Extension.extension:consciousness",
+        "path": "Extension.extension",
+        "sliceName": "consciousness",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:consciousness.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:consciousness.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "consciousness"
+      },
+      {
+        "id": "Extension.extension:consciousness.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:consciousness.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/Consciousness"
+        }
+      },
+      {
+        "id": "Extension.extension:LOC_questions",
+        "path": "Extension.extension",
+        "sliceName": "LOC_questions",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:LOC_questions.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:LOC_questions.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "LOC_questions"
+      },
+      {
+        "id": "Extension.extension:LOC_questions.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:LOC_questions.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/LOCquestion"
+        }
+      },
+      {
+        "id": "Extension.extension:LOC_command",
+        "path": "Extension.extension",
+        "sliceName": "LOC_command",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:LOC_command.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:LOC_command.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "LOC_command"
+      },
+      {
+        "id": "Extension.extension:LOC_command.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:LOC_command.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/LOCcommand"
+        }
+      },
+      {
+        "id": "Extension.extension:gaze",
+        "path": "Extension.extension",
+        "sliceName": "gaze",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:gaze.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:gaze.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "gaze"
+      },
+      {
+        "id": "Extension.extension:gaze.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:gaze.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/Gaze"
+        }
+      },
+      {
+        "id": "Extension.extension:visual_field",
+        "path": "Extension.extension",
+        "sliceName": "visual_field",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:visual_field.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:visual_field.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "visual_field"
+      },
+      {
+        "id": "Extension.extension:visual_field.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:visual_field.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/VisualField"
+        }
+      },
+      {
+        "id": "Extension.extension:facial_palsy",
+        "path": "Extension.extension",
+        "sliceName": "facial_palsy",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:facial_palsy.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:facial_palsy.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "facial_palsy"
+      },
+      {
+        "id": "Extension.extension:facial_palsy.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:facial_palsy.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/FacialPalsy"
+        }
+      },
+      {
+        "id": "Extension.extension:motor_arm_left",
+        "path": "Extension.extension",
+        "sliceName": "motor_arm_left",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:motor_arm_left.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:motor_arm_left.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "motor_arm_left"
+      },
+      {
+        "id": "Extension.extension:motor_arm_left.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:motor_arm_left.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/MotorArmL"
+        }
+      },
+      {
+        "id": "Extension.extension:motor_arm_right",
+        "path": "Extension.extension",
+        "sliceName": "motor_arm_right",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:motor_arm_right.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:motor_arm_right.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "motor_arm_right"
+      },
+      {
+        "id": "Extension.extension:motor_arm_right.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:motor_arm_right.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/MotorArmR"
+        }
+      },
+      {
+        "id": "Extension.extension:motor_leg_left",
+        "path": "Extension.extension",
+        "sliceName": "motor_leg_left",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:motor_leg_left.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:motor_leg_left.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "motor_leg_left"
+      },
+      {
+        "id": "Extension.extension:motor_leg_left.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:motor_leg_left.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/MotorLegL"
+        }
+      },
+      {
+        "id": "Extension.extension:motor_leg_right",
+        "path": "Extension.extension",
+        "sliceName": "motor_leg_right",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:motor_leg_right.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:motor_leg_right.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "motor_leg_right"
+      },
+      {
+        "id": "Extension.extension:motor_leg_right.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:motor_leg_right.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/MotorLegR"
+        }
+      },
+      {
+        "id": "Extension.extension:ataxia",
+        "path": "Extension.extension",
+        "sliceName": "ataxia",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:ataxia.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:ataxia.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "ataxia"
+      },
+      {
+        "id": "Extension.extension:ataxia.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:ataxia.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/Ataxia"
+        }
+      },
+      {
+        "id": "Extension.extension:sensory",
+        "path": "Extension.extension",
+        "sliceName": "sensory",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:sensory.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:sensory.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "sensory"
+      },
+      {
+        "id": "Extension.extension:sensory.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sensory.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/Sensory"
+        }
+      },
+      {
+        "id": "Extension.extension:language",
+        "path": "Extension.extension",
+        "sliceName": "language",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:language.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:language.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "language"
+      },
+      {
+        "id": "Extension.extension:language.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:language.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/Language"
+        }
+      },
+      {
+        "id": "Extension.extension:dysarthria",
+        "path": "Extension.extension",
+        "sliceName": "dysarthria",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:dysarthria.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dysarthria.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "dysarthria"
+      },
+      {
+        "id": "Extension.extension:dysarthria.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dysarthria.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/Dysarthria"
+        }
+      },
+      {
+        "id": "Extension.extension:inattention",
+        "path": "Extension.extension",
+        "sliceName": "inattention",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:inattention.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:inattention.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "inattention"
+      },
+      {
+        "id": "Extension.extension:inattention.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:inattention.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/Inattention"
+        }
+      },
+      {
+        "id": "Extension.extension:totalscore_nihss",
+        "path": "Extension.extension",
+        "sliceName": "totalscore_nihss",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:totalscore_nihss.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:totalscore_nihss.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "totalscore_nihss"
+      },
+      {
+        "id": "Extension.extension:totalscore_nihss.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://example.org/fhir/fish/StructureDefinition/Nihss-type"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

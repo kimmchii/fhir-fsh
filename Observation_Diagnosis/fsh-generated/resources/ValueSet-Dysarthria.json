@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Dysarthria",
+  "id": "Dysarthria",
+  "title": "Dysarthria",
+  "description": "Dysarthria [NIH Stroke Scale]",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/Dysarthria",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA6626-1",
+            "display": "0 - Normal"
+          },
+          {
+            "code": "LA18475-6",
+            "display": "1 - Mild-to-moderate dysarthria; patient slurs at least some words and, at worst, can be understood with some difficulty"
+          },
+          {
+            "code": "LA18476-4",
+            "display": "2 - Severe dysarthria; patient's speech is so slurred as to be unintelligible in the absence of or out of proportion to any dysphasia, or is mute/anarthric"
+          },
+          {
+            "code": "LA18477-2",
+            "display": "UN - Intubated or other physical barrier, explain:"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Neuro-type",
+  "url": "http://example.org/fhir/fish/StructureDefinition/Neuro-type",
+  "version": "0.1.0",
+  "name": "Neurosurgical",
+  "title": "Neurosurgical",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Neurosurgical"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 16
+      },
+      {
+        "id": "Extension.extension:NE_Q1_E",
+        "path": "Extension.extension",
+        "sliceName": "NE_Q1_E",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:NE_Q1_E.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "NE_Q1_E"
+      },
+      {
+        "id": "Extension.extension:NE_Q2_V",
+        "path": "Extension.extension",
+        "sliceName": "NE_Q2_V",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:NE_Q2_V.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "NE_Q2_V"
+      },
+      {
+        "id": "Extension.extension:NE_Q3_M",
+        "path": "Extension.extension",
+        "sliceName": "NE_Q3_M",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:NE_Q3_M.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "NE_Q3_M"
+      },
+      {
+        "id": "Extension.extension:NE_Q4_GCS",
+        "path": "Extension.extension",
+        "sliceName": "NE_Q4_GCS",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:NE_Q4_GCS.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "NE_Q4_GCS"
+      },
+      {
+        "id": "Extension.extension:NE_Q5_T",
+        "path": "Extension.extension",
+        "sliceName": "NE_Q5_T",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:NE_Q5_T.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "NE_Q5_T"
+      },
+      {
+        "id": "Extension.extension:NE_Q6_BPUp",
+        "path": "Extension.extension",
+        "sliceName": "NE_Q6_BPUp",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:NE_Q6_BPUp.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "NE_Q6_BPUp"
+      },
+      {
+        "id": "Extension.extension:NE_Q7_BPLow",
+        "path": "Extension.extension",
+        "sliceName": "NE_Q7_BPLow",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:NE_Q7_BPLow.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "NE_Q7_BPLow"
+      },
+      {
+        "id": "Extension.extension:NE_Q8_R",
+        "path": "Extension.extension",
+        "sliceName": "NE_Q8_R",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:NE_Q8_R.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "NE_Q8_R"
+      },
+      {
+        "id": "Extension.extension:NE_Q9_RightPUPIL",
+        "path": "Extension.extension",
+        "sliceName": "NE_Q9_RightPUPIL",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:NE_Q9_RightPUPIL.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "NE_Q9_RightPUPIL"
+      },
+      {
+        "id": "Extension.extension:NE_Q10_LeftPUPIL",
+        "path": "Extension.extension",
+        "sliceName": "NE_Q10_LeftPUPIL",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:NE_Q10_LeftPUPIL.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "NE_Q10_LeftPUPIL"
+      },
+      {
+        "id": "Extension.extension:NE_Q11_RightReactPUPIL",
+        "path": "Extension.extension",
+        "sliceName": "NE_Q11_RightReactPUPIL",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:NE_Q11_RightReactPUPIL.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "NE_Q11_RightReactPUPIL"
+      },
+      {
+        "id": "Extension.extension:NE_Q12_LeftReactPUPIL",
+        "path": "Extension.extension",
+        "sliceName": "NE_Q12_LeftReactPUPIL",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:NE_Q12_LeftReactPUPIL.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "NE_Q12_LeftReactPUPIL"
+      },
+      {
+        "id": "Extension.extension:NE_Q13_ArmL",
+        "path": "Extension.extension",
+        "sliceName": "NE_Q13_ArmL",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:NE_Q13_ArmL.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "NE_Q13_ArmL"
+      },
+      {
+        "id": "Extension.extension:NE_Q14_ArmR",
+        "path": "Extension.extension",
+        "sliceName": "NE_Q14_ArmR",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:NE_Q14_ArmR.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "NE_Q14_ArmR"
+      },
+      {
+        "id": "Extension.extension:NE_Q15_LegL",
+        "path": "Extension.extension",
+        "sliceName": "NE_Q15_LegL",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:NE_Q15_LegL.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "NE_Q15_LegL"
+      },
+      {
+        "id": "Extension.extension:NE_Q16_LegR",
+        "path": "Extension.extension",
+        "sliceName": "NE_Q16_LegR",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:NE_Q16_LegR.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "NE_Q16_LegR"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://example.org/fhir/fish/StructureDefinition/Neuro-type"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

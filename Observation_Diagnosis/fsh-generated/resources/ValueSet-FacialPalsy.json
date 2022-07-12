@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "FacialPalsy",
+  "id": "FacialPalsy",
+  "title": "FacialPalsy",
+  "description": "Facial palsy [NIH Stroke Scale]",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/FacialPalsy",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA18452-5",
+            "display": "0 - Normal symmetrical movements"
+          },
+          {
+            "code": "LA18453-3",
+            "display": "1 - Minor paralysis (flattened nasolabial fold, asymmetry on smiling)"
+          },
+          {
+            "code": "LA18454-1",
+            "display": "2 - Partial paralysis (total or near-total paralysis of lower face)"
+          },
+          {
+            "code": "LA18455-8",
+            "display": "3 - Complete paralysis of one or both sides (absence of facial movement in the upper and lower face)"
+          }
+        ]
+      }
+    ]
+  }
+}

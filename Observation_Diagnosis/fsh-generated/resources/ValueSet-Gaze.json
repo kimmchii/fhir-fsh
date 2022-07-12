@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Gaze",
+  "id": "Gaze",
+  "title": "Gaze",
+  "description": "Best gaze [NIH Stroke Scale]",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/Gaze",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA6626-1",
+            "display": "0 - Normal"
+          },
+          {
+            "code": "LA18446-7",
+            "display": "1 - Partial gaze palsy; gaze is abnormal in one or both eyes, but forced deviation or total gaze paresis is not present"
+          },
+          {
+            "code": "LA18447-5",
+            "display": "2 - Forced deviation, or total gaze paresis not overcome by the oculocephalic maneuver"
+          }
+        ]
+      }
+    ]
+  }
+}

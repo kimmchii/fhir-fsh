@@ -1,0 +1,538 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Barthel-type",
+  "url": "http://example.org/fhir/fish/StructureDefinition/Barthel-type",
+  "version": "0.1.0",
+  "name": "Barthel",
+  "title": "Barthel",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Barthel"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 11
+      },
+      {
+        "id": "Extension.extension:feeding",
+        "path": "Extension.extension",
+        "sliceName": "feeding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:feeding.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:feeding.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "feeding"
+      },
+      {
+        "id": "Extension.extension:feeding.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:feeding.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/Feeding"
+        }
+      },
+      {
+        "id": "Extension.extension:transfer",
+        "path": "Extension.extension",
+        "sliceName": "transfer",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:transfer.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:transfer.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "transfer"
+      },
+      {
+        "id": "Extension.extension:transfer.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:transfer.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/Transfer"
+        }
+      },
+      {
+        "id": "Extension.extension:groom",
+        "path": "Extension.extension",
+        "sliceName": "groom",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:groom.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:groom.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "groom"
+      },
+      {
+        "id": "Extension.extension:groom.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:groom.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/Groom"
+        }
+      },
+      {
+        "id": "Extension.extension:toilet_use",
+        "path": "Extension.extension",
+        "sliceName": "toilet_use",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:toilet_use.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:toilet_use.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "toilet_use"
+      },
+      {
+        "id": "Extension.extension:toilet_use.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:toilet_use.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/ToiletUse"
+        }
+      },
+      {
+        "id": "Extension.extension:bath",
+        "path": "Extension.extension",
+        "sliceName": "bath",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:bath.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bath.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "bath"
+      },
+      {
+        "id": "Extension.extension:bath.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bath.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/Bath"
+        }
+      },
+      {
+        "id": "Extension.extension:mobility",
+        "path": "Extension.extension",
+        "sliceName": "mobility",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:mobility.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:mobility.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "mobility"
+      },
+      {
+        "id": "Extension.extension:mobility.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:mobility.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/Mobility"
+        }
+      },
+      {
+        "id": "Extension.extension:stairs",
+        "path": "Extension.extension",
+        "sliceName": "stairs",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:stairs.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stairs.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "stairs"
+      },
+      {
+        "id": "Extension.extension:stairs.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:stairs.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/Stairs"
+        }
+      },
+      {
+        "id": "Extension.extension:dressing",
+        "path": "Extension.extension",
+        "sliceName": "dressing",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:dressing.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:dressing.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "dressing"
+      },
+      {
+        "id": "Extension.extension:dressing.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dressing.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/Dressing"
+        }
+      },
+      {
+        "id": "Extension.extension:bowels",
+        "path": "Extension.extension",
+        "sliceName": "bowels",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:bowels.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bowels.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "bowels"
+      },
+      {
+        "id": "Extension.extension:bowels.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bowels.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/Bowels"
+        }
+      },
+      {
+        "id": "Extension.extension:bladder",
+        "path": "Extension.extension",
+        "sliceName": "bladder",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:bladder.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:bladder.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "bladder"
+      },
+      {
+        "id": "Extension.extension:bladder.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bladder.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/Bladder"
+        }
+      },
+      {
+        "id": "Extension.extension:totalscore_barthel",
+        "path": "Extension.extension",
+        "sliceName": "totalscore_barthel",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:totalscore_barthel.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:totalscore_barthel.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "totalscore_barthel"
+      },
+      {
+        "id": "Extension.extension:totalscore_barthel.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://example.org/fhir/fish/StructureDefinition/Barthel-type"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

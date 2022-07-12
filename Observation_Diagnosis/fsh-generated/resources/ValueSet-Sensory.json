@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Sensory",
+  "id": "Sensory",
+  "title": "Sensory",
+  "description": "Sensory [NIH Stroke Scale]",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/Sensory",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA18468-1",
+            "display": "0 - Normal; no sensory loss"
+          },
+          {
+            "code": "LA18469-9",
+            "display": "1 - Mild-to-moderate sensory loss; patient feels pinprick is less sharp or is dull on the affected side; or there is a loss of superficial pain with pinprick, but patient is aware of being touched"
+          },
+          {
+            "code": "LA18470-7",
+            "display": "2 - Severe to total sensory loss; patient is not aware of being touched in the face, arm, and leg"
+          }
+        ]
+      }
+    ]
+  }
+}

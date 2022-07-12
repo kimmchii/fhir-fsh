@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VisualField",
+  "id": "VisualField",
+  "title": "VisualField",
+  "description": "Visual [NIH Stroke Scale]",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/VisualField",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA18448-3",
+            "display": "0 - No visual loss"
+          },
+          {
+            "code": "LA18449-1",
+            "display": "1 - Partial hemianopia"
+          },
+          {
+            "code": "LA18450-9",
+            "display": "2 - Complete hemianopia"
+          },
+          {
+            "code": "LA18451-7",
+            "display": "3 - Bilateral hemianopia (blind including cortical blindness)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Groom",
+  "id": "Groom",
+  "title": "Groom value",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/Groom",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA31643-2",
+            "display": "0 - Need help with personal care"
+          },
+          {
+            "code": "LA31644-0",
+            "display": "5 - Independent face/hair/teeth/shaving (implements provided)"
+          }
+        ]
+      }
+    ]
+  }
+}

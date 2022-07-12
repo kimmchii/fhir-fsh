@@ -1,0 +1,196 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Swallow-type",
+  "url": "http://example.org/fhir/fish/StructureDefinition/Swallow-type",
+  "version": "0.1.0",
+  "name": "Swallow",
+  "title": "Swallow",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Swallow"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 12
+      },
+      {
+        "id": "Extension.extension:SW_Q1_",
+        "path": "Extension.extension",
+        "sliceName": "SW_Q1_",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:SW_Q1_.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "SW_Q1_"
+      },
+      {
+        "id": "Extension.extension:SW_Q2_",
+        "path": "Extension.extension",
+        "sliceName": "SW_Q2_",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:SW_Q2_.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "SW_Q2_"
+      },
+      {
+        "id": "Extension.extension:SW_Q3_",
+        "path": "Extension.extension",
+        "sliceName": "SW_Q3_",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:SW_Q3_.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "SW_Q3_"
+      },
+      {
+        "id": "Extension.extension:SW_Q4_",
+        "path": "Extension.extension",
+        "sliceName": "SW_Q4_",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:SW_Q4_.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "SW_Q4_"
+      },
+      {
+        "id": "Extension.extension:SW_Q5_",
+        "path": "Extension.extension",
+        "sliceName": "SW_Q5_",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:SW_Q5_.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "SW_Q5_"
+      },
+      {
+        "id": "Extension.extension:SW_Q6_",
+        "path": "Extension.extension",
+        "sliceName": "SW_Q6_",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:SW_Q6_.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "SW_Q6_"
+      },
+      {
+        "id": "Extension.extension:SW_Q7_",
+        "path": "Extension.extension",
+        "sliceName": "SW_Q7_",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:SW_Q7_.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "SW_Q7_"
+      },
+      {
+        "id": "Extension.extension:SW_Q8_",
+        "path": "Extension.extension",
+        "sliceName": "SW_Q8_",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:SW_Q8_.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "SW_Q8_"
+      },
+      {
+        "id": "Extension.extension:SW_Q9_",
+        "path": "Extension.extension",
+        "sliceName": "SW_Q9_",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:SW_Q9_.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "SW_Q9_"
+      },
+      {
+        "id": "Extension.extension:SW_Q10_",
+        "path": "Extension.extension",
+        "sliceName": "SW_Q10_",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:SW_Q10_.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "SW_Q10_"
+      },
+      {
+        "id": "Extension.extension:SW_Q11_",
+        "path": "Extension.extension",
+        "sliceName": "SW_Q11_",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:SW_Q11_.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "SW_Q11_"
+      },
+      {
+        "id": "Extension.extension:SW_Q12_",
+        "path": "Extension.extension",
+        "sliceName": "SW_Q12_",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:SW_Q12_.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "SW_Q12_"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://example.org/fhir/fish/StructureDefinition/Swallow-type"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

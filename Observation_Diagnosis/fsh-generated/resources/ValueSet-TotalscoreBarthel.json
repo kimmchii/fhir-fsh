@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "TotalscoreBarthel",
+  "id": "TotalscoreBarthel",
+  "title": "Totalscore_Barthel",
+  "description": "Total score Barthel Index",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/TotalscoreBarthel",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA31627-5",
+            "display": "0 - Incontinent (or needs to be given enemas)"
+          },
+          {
+            "code": "LA31626-7",
+            "display": "1 - Occasional accident"
+          },
+          {
+            "code": "LA31625-9",
+            "display": "2 - Continent"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "LOCquestion",
+  "id": "LOCquestion",
+  "title": "LOCquestion",
+  "description": "LOC questions [NIH Stroke Scale]",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/LOCquestion",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA18440-0",
+            "display": "0 - Answers both questions correctly"
+          },
+          {
+            "code": "LA18441-8",
+            "display": "1 - Answers one question correctly"
+          },
+          {
+            "code": "LA18442-6",
+            "display": "2 - Answers neither question correctly"
+          }
+        ]
+      }
+    ]
+  }
+}

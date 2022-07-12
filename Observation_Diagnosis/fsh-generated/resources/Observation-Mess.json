@@ -1,0 +1,78 @@
+{
+  "resourceType": "Observation",
+  "id": "Mess",
+  "meta": {
+    "profile": [
+      "http://example.org/fhir/fish/StructureDefinition/Observation-Diag"
+    ]
+  },
+  "component": [
+    {
+      "extension": [
+        {
+          "url": "http://example.org/fhir/fish/StructureDefinition/Barthel-type",
+          "extension": [
+            {
+              "url": "feeding",
+              "valueCoding": {
+                "code": "LA12302-8",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "transfer",
+              "valueCoding": {
+                "code": "LA12303-6",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "groom"
+            },
+            {
+              "url": "toilet_use"
+            },
+            {
+              "url": "bath"
+            },
+            {
+              "url": "mobility"
+            },
+            {
+              "url": "stairs"
+            },
+            {
+              "url": "dressing"
+            },
+            {
+              "url": "bowels"
+            },
+            {
+              "url": "bladder"
+            },
+            {
+              "url": "totalscore_barthel"
+            }
+          ]
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "96762-0",
+            "system": "http://loinc.org"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "survey"
+      }
+    ]
+  }
+}

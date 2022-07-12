@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Consciousness",
+  "id": "Consciousness",
+  "title": "Consciouness",
+  "description": "Level of consciousness [NIH Stroke Scale]",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/Consciousness",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA18436-8",
+            "display": "0 - Alert, keenly responsive"
+          },
+          {
+            "code": "LA18437-6",
+            "display": "1 - Not alert; but arousable by minor stimulation to obey, answer, or respond"
+          },
+          {
+            "code": "LA18438-4",
+            "display": "2 - Not alert; requires repeated stimulation to attend, or is obtunded and requires strong or painful stimulation to make movements (not stereotyped)."
+          },
+          {
+            "code": "LA18439-2",
+            "display": "3 - Responds only with reflex motor or autonomic effects or totally unresponsive, flaccid, and areflexic."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "LOCcommand",
+  "id": "LOCcommand",
+  "title": "LOCcommand",
+  "description": "LOC commands [NIH Stroke Scale]",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/LOCcommand",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA18443-4",
+            "display": "0 - Performs both tasks correctly"
+          },
+          {
+            "code": "LA18444-2",
+            "display": "1 - Performs one task correctly"
+          },
+          {
+            "code": "LA18445-9",
+            "display": "2 - Performs neither task correctly"
+          }
+        ]
+      }
+    ]
+  }
+}

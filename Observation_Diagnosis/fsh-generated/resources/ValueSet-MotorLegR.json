@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MotorLegR",
+  "id": "MotorLegR",
+  "title": "MotorLegR",
+  "description": "Motor leg Leg - right [NIH Stroke Scale]",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/MotorLegR",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA18462-4",
+            "display": "0 - No drift; leg holds 30-degree position for full 5 seconds"
+          },
+          {
+            "code": "LA18463-2",
+            "display": "1 - Drift; leg falls by the end of the 5-second period but does not hit bed"
+          },
+          {
+            "code": "LA18464-0",
+            "display": "2 - Some effort against gravity; leg falls to bed by 5 seconds, but has some effort against gravity"
+          },
+          {
+            "code": "LA18465-7",
+            "display": "3 - No effort against gravity; leg falls to bed immediately"
+          },
+          {
+            "code": "LA18460-8",
+            "display": "4 - No movement"
+          },
+          {
+            "code": "LA18461-6",
+            "display": "UN - Amputation or joint fusion, explain:"
+          }
+        ]
+      }
+    ]
+  }
+}

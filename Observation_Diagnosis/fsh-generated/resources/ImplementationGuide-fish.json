@@ -1,0 +1,312 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "fish",
+  "url": "http://example.org/fhir/fish/ImplementationGuide/fish",
+  "version": "0.1.0",
+  "name": "FishImplementationGuide",
+  "title": "Fish Implementation Guide",
+  "status": "draft",
+  "contact": [
+    {
+      "name": "Bill Cod",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "cod@reef.gov"
+        }
+      ]
+    }
+  ],
+  "description": "An example of how FSH can be used to create an IG about fish",
+  "packageId": "fish",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-Diag"
+        },
+        "name": "ObsDiag",
+        "description": "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Neurosurgical",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Barthel-type"
+        },
+        "name": "Barthel",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Neuro-type"
+        },
+        "name": "Neurosurgical",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Nihss-type"
+        },
+        "name": "Nihss",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Swallow-type"
+        },
+        "name": "Swallow",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Ataxia"
+        },
+        "name": "Ataxia",
+        "description": "Limb ataxia [NIH Stroke Scale]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Bath"
+        },
+        "name": "Bath",
+        "description": "Bathing - functional ability",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Bladder"
+        },
+        "name": "Bladder",
+        "description": "Bladder control - functional ability",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Bowels"
+        },
+        "name": "Bowels",
+        "description": "Bowel control - functional ability",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Consciousness"
+        },
+        "name": "Consciouness",
+        "description": "Level of consciousness [NIH Stroke Scale]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Dressing"
+        },
+        "name": "Dressing",
+        "description": "Dressing - functional ability",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Dysarthria"
+        },
+        "name": "Dysarthria",
+        "description": "Dysarthria [NIH Stroke Scale]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/FacialPalsy"
+        },
+        "name": "FacialPalsy",
+        "description": "Facial palsy [NIH Stroke Scale]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Feeding"
+        },
+        "name": "feeding value",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Gaze"
+        },
+        "name": "Gaze",
+        "description": "Best gaze [NIH Stroke Scale]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Groom"
+        },
+        "name": "Groom value",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Inattention"
+        },
+        "name": "Inattention",
+        "description": "Extinction and inattention [NIH Stroke Scale]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/LOCcommand"
+        },
+        "name": "LOCcommand",
+        "description": "LOC commands [NIH Stroke Scale]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/LOCquestion"
+        },
+        "name": "LOCquestion",
+        "description": "LOC questions [NIH Stroke Scale]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Language"
+        },
+        "name": "Language",
+        "description": "Best language [NIH Stroke Scale]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Mobility"
+        },
+        "name": "Mobility",
+        "description": "Ambulation - functional ability",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/MotorArmL"
+        },
+        "name": "MotorArmL",
+        "description": "Motor arm Left arm [NIH Stroke Scale]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/MotorArmR"
+        },
+        "name": "MotorArmR",
+        "description": "Motor arm Right arm [NIH Stroke Scale]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/MotorLegL"
+        },
+        "name": "MotorLegL",
+        "description": "Motor leg Leg - left [NIH Stroke Scale]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/MotorLegR"
+        },
+        "name": "MotorLegR",
+        "description": "Motor leg Leg - right [NIH Stroke Scale]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Sensory"
+        },
+        "name": "Sensory",
+        "description": "Sensory [NIH Stroke Scale]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Stairs"
+        },
+        "name": "Stairs",
+        "description": "Stairs - functional ability",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ToiletUse"
+        },
+        "name": "Toileting",
+        "description": "toileting - functional ability",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/TotalscoreBarthel"
+        },
+        "name": "Totalscore_Barthel",
+        "description": "Total score Barthel Index",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Transfer"
+        },
+        "name": "Transfer value",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/VisualField"
+        },
+        "name": "VisualField",
+        "description": "Visual [NIH Stroke Scale]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/Mess"
+        },
+        "name": "Mess",
+        "exampleCanonical": "http://example.org/fhir/fish/StructureDefinition/Observation-Diag"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "apply-publisher",
+        "value": "true"
+      },
+      {
+        "code": "apply-contact",
+        "value": "true"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      }
+    ]
+  }
+}

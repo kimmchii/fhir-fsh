@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Ataxia",
+  "id": "Ataxia",
+  "title": "Ataxia",
+  "description": "Limb ataxia [NIH Stroke Scale]",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/Ataxia",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA9634-2",
+            "display": "0 - Absent"
+          },
+          {
+            "code": "LA18466-5",
+            "display": "1 - Present in one limb"
+          },
+          {
+            "code": "LA18467-3",
+            "display": "2 - Present in two limbs"
+          },
+          {
+            "code": "LA18461-6",
+            "display": "UN - Amputation or joint fusion, explain:"
+          }
+        ]
+      }
+    ]
+  }
+}

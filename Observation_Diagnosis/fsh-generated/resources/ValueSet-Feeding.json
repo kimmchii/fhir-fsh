@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Feeding",
+  "id": "Feeding",
+  "title": "feeding value",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/Feeding",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA12302-8",
+            "display": "0 - Independent"
+          },
+          {
+            "code": "LA12303-6",
+            "display": "1 - Needed some help"
+          },
+          {
+            "code": "LA12304-4",
+            "display": "2 - Dependent"
+          }
+        ]
+      }
+    ]
+  }
+}

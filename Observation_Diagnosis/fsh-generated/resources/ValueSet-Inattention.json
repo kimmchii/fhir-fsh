@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Inattention",
+  "id": "Inattention",
+  "title": "Inattention",
+  "description": "Extinction and inattention [NIH Stroke Scale]",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/Inattention",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA18478-0",
+            "display": "0 - No abnormality"
+          },
+          {
+            "code": "LA18479-8",
+            "display": "1 - Visual, tactile, auditory, spatial, or personal inattention or extinction to bilateral simultaneous stimulation in one of the sensory modalities"
+          },
+          {
+            "code": "LA18480-6",
+            "display": "2 - Profound hemi-inattention or extinction to more than one modality; does not recognize own hand or orients to only one side of space"
+          }
+        ]
+      }
+    ]
+  }
+}
