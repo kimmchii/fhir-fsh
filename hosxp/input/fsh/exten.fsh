@@ -28,6 +28,6 @@ InstanceOf: ObsDiag
 * code.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category" 
 * code.coding.code = #survey
 * component.code = LOINC#96762-0
-* component.extension[Ba].extension[feeding].valueCoding = LOINC#LA12303-6 
+* component.extension[Ba].extension[feeding].valueCoding = LOINC#LA12302-8 
 * component.extension[Ba].extension[transfer].valueCoding = LOINC#LA12303-6 
 
