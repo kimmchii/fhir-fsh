@@ -18,7 +18,7 @@ Description: "Diagnosis form contains with 4 part: Barthel Swallow Nihss, and Ne
 * component.extension contains 
     Barthel named Ba 1..1 
     // Swallow named Sw 1..1 and
-    // Nihss named Ni 1..1 and
+   // Nihss named Ni 1..1 and
     // Neurosurgical named Ne 1..1 
 
 
