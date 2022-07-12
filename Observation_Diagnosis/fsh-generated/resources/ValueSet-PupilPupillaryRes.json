@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PupilPupillaryRes",
+  "id": "PupilPupillaryRes",
+  "title": "PupilPupLeft",
+  "description": " Pupil Pupillary response",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/PupilPupillaryRes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA25441-9",
+            "display": "1 - Reactive to light"
+          },
+          {
+            "code": "LA24899-9",
+            "display": "2 - Sluggishly reactive to light"
+          },
+          {
+            "code": "LA25442-7",
+            "display": "3 - Not reactive to light"
+          },
+          {
+            "code": "LA25443-5",
+            "display": "4 - Reactive to accomodation"
+          },
+          {
+            "code": "LA25444-3",
+            "display": "5 - Not reactive to accomodation"
+          },
+          {
+            "code": "LA46-8",
+            "display": "OTH - Other, Specify:"
+          }
+        ]
+      }
+    ]
+  }
+}

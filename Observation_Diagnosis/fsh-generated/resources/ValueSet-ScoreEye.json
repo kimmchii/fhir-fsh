@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ScoreEye",
+  "id": "ScoreEye",
+  "title": "ScoreEye",
+  "description": "Glasgow coma score eye openingActive",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/ScoreEye",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA6553-7",
+            "display": "1 - No eye opening"
+          },
+          {
+            "code": "LA6554-5",
+            "display": "2 - Eye opening to pain"
+          },
+          {
+            "code": "LA6555-2",
+            "display": "3 - Eye opening to verbal command"
+          },
+          {
+            "code": "LA6556-0",
+            "display": "4 - Eyes open spontaneously"
+          }
+        ]
+      }
+    ]
+  }
+}

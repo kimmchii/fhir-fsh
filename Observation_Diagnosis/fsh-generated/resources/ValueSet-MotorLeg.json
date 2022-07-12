@@ -1,12 +1,12 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "MotorLegR",
-  "id": "MotorLegR",
-  "title": "MotorLegR",
-  "description": "Motor leg Leg - right [NIH Stroke Scale]",
+  "name": "MotorLeg",
+  "id": "MotorLeg",
+  "title": "MotorLeg",
+  "description": "Motor leg [NIH Stroke Scale]",
   "version": "0.1.0",
-  "url": "http://example.org/fhir/fish/ValueSet/MotorLegR",
+  "url": "http://example.org/fhir/fish/ValueSet/MotorLeg",
   "compose": {
     "include": [
       {

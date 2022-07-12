@@ -70,7 +70,7 @@
           "description": "",
           "ordered": false
         },
-        "min": 4
+        "min": 3
       },
       {
         "id": "Observation.component:barthel",
@@ -105,43 +105,6 @@
             "code": "Extension",
             "profile": [
               "http://example.org/fhir/fish/StructureDefinition/Barthel-type"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Observation.component:swallow",
-        "path": "Observation.component",
-        "sliceName": "swallow",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Observation.component:swallow.extension",
-        "path": "Observation.component.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.component:swallow.extension:Sw",
-        "path": "Observation.component.extension",
-        "sliceName": "Sw",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://example.org/fhir/fish/StructureDefinition/Swallow-type"
             ]
           }
         ]

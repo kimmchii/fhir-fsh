@@ -34,4 +34,103 @@ Title:     "Swallow"
 // * extension[].value[x] only Coding
 // * extension[].valueCoding from  (required)
 
+// ValueSet: 
+// Title:
+// Description: 
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+
+// ValueSet: 
+// Title:
+// Description: 
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+
+// ValueSet: 
+// Title:
+// Description: 
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+
+// ValueSet: 
+// Title:
+// Description: 
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+
+// ValueSet: 
+// Title:
+// Description: 
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+
+// ValueSet: 
+// Title:
+// Description: 
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+
+// ValueSet: 
+// Title:
+// Description: 
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+
+// ValueSet: 
+// Title:
+// Description: 
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+
+// ValueSet: 
+// Title:
+// Description: 
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+
+// ValueSet: 
+// Title:
+// Description: 
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+
+// ValueSet: 
+// Title:
+// Description: 
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+// * LOINC#
+
 

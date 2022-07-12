@@ -1,6 +1,7 @@
 Extension: Barthel
 Id:        Barthel-type
 Title:     "Barthel"
+//LOINC#96762-0
 * extension contains 
     feeding 1..1 and 
     transfer 1..1 and
@@ -44,8 +45,7 @@ Title:     "Barthel"
 * extension[bladder].value[x] only Coding
 * extension[bladder].valueCoding from  Bladder (required)
 
-* extension[totalscore_barthel].value[x] only Coding
-* extension[totalscore_barthel].valueString 
+* extension[totalscore_barthel].value[x] only string
 // LOINC#96761-2 "Total score Barthel Index"
 
 //  LOINC#83184-2 "Feeding"

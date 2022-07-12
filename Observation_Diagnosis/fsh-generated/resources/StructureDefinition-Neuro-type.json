@@ -38,196 +38,600 @@
         "min": 16
       },
       {
-        "id": "Extension.extension:NE_Q1_E",
+        "id": "Extension.extension:score_eye",
         "path": "Extension.extension",
-        "sliceName": "NE_Q1_E",
+        "sliceName": "score_eye",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:NE_Q1_E.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "NE_Q1_E"
+        "id": "Extension.extension:score_eye.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
-        "id": "Extension.extension:NE_Q2_V",
+        "id": "Extension.extension:score_eye.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "score_eye"
+      },
+      {
+        "id": "Extension.extension:score_eye.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:score_eye.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/ScoreEye"
+        }
+      },
+      {
+        "id": "Extension.extension:score_verbal",
         "path": "Extension.extension",
-        "sliceName": "NE_Q2_V",
+        "sliceName": "score_verbal",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:NE_Q2_V.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "NE_Q2_V"
+        "id": "Extension.extension:score_verbal.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
-        "id": "Extension.extension:NE_Q3_M",
+        "id": "Extension.extension:score_verbal.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "score_verbal"
+      },
+      {
+        "id": "Extension.extension:score_verbal.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:score_verbal.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/ScoreVerbal"
+        }
+      },
+      {
+        "id": "Extension.extension:score_motor",
         "path": "Extension.extension",
-        "sliceName": "NE_Q3_M",
+        "sliceName": "score_motor",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:NE_Q3_M.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "NE_Q3_M"
+        "id": "Extension.extension:score_motor.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
-        "id": "Extension.extension:NE_Q4_GCS",
+        "id": "Extension.extension:score_motor.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "score_motor"
+      },
+      {
+        "id": "Extension.extension:score_motor.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:score_motor.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/ScoreMotor"
+        }
+      },
+      {
+        "id": "Extension.extension:score_total",
         "path": "Extension.extension",
-        "sliceName": "NE_Q4_GCS",
+        "sliceName": "score_total",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:NE_Q4_GCS.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "NE_Q4_GCS"
+        "id": "Extension.extension:score_total.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
-        "id": "Extension.extension:NE_Q5_T",
+        "id": "Extension.extension:score_total.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "score_total"
+      },
+      {
+        "id": "Extension.extension:score_total.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:temperature",
         "path": "Extension.extension",
-        "sliceName": "NE_Q5_T",
+        "sliceName": "temperature",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:NE_Q5_T.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "NE_Q5_T"
+        "id": "Extension.extension:temperature.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
-        "id": "Extension.extension:NE_Q6_BPUp",
+        "id": "Extension.extension:temperature.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "temperature"
+      },
+      {
+        "id": "Extension.extension:temperature.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:systolic",
         "path": "Extension.extension",
-        "sliceName": "NE_Q6_BPUp",
+        "sliceName": "systolic",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:NE_Q6_BPUp.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "NE_Q6_BPUp"
+        "id": "Extension.extension:systolic.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
-        "id": "Extension.extension:NE_Q7_BPLow",
+        "id": "Extension.extension:systolic.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "systolic"
+      },
+      {
+        "id": "Extension.extension:systolic.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:diastolic",
         "path": "Extension.extension",
-        "sliceName": "NE_Q7_BPLow",
+        "sliceName": "diastolic",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:NE_Q7_BPLow.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "NE_Q7_BPLow"
+        "id": "Extension.extension:diastolic.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
-        "id": "Extension.extension:NE_Q8_R",
+        "id": "Extension.extension:diastolic.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "diastolic"
+      },
+      {
+        "id": "Extension.extension:diastolic.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:respiratory_rate",
         "path": "Extension.extension",
-        "sliceName": "NE_Q8_R",
+        "sliceName": "respiratory_rate",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:NE_Q8_R.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "NE_Q8_R"
+        "id": "Extension.extension:respiratory_rate.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
-        "id": "Extension.extension:NE_Q9_RightPUPIL",
+        "id": "Extension.extension:respiratory_rate.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "respiratory_rate"
+      },
+      {
+        "id": "Extension.extension:respiratory_rate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:pupilD_manual_right",
         "path": "Extension.extension",
-        "sliceName": "NE_Q9_RightPUPIL",
+        "sliceName": "pupilD_manual_right",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:NE_Q9_RightPUPIL.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "NE_Q9_RightPUPIL"
+        "id": "Extension.extension:pupilD_manual_right.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
-        "id": "Extension.extension:NE_Q10_LeftPUPIL",
+        "id": "Extension.extension:pupilD_manual_right.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "pupilD_manual_right"
+      },
+      {
+        "id": "Extension.extension:pupilD_manual_right.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:pupilD_manual_left",
         "path": "Extension.extension",
-        "sliceName": "NE_Q10_LeftPUPIL",
+        "sliceName": "pupilD_manual_left",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:NE_Q10_LeftPUPIL.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "NE_Q10_LeftPUPIL"
+        "id": "Extension.extension:pupilD_manual_left.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
-        "id": "Extension.extension:NE_Q11_RightReactPUPIL",
+        "id": "Extension.extension:pupilD_manual_left.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "pupilD_manual_left"
+      },
+      {
+        "id": "Extension.extension:pupilD_manual_left.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:pupilP_response_right",
         "path": "Extension.extension",
-        "sliceName": "NE_Q11_RightReactPUPIL",
+        "sliceName": "pupilP_response_right",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:NE_Q11_RightReactPUPIL.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "NE_Q11_RightReactPUPIL"
+        "id": "Extension.extension:pupilP_response_right.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
-        "id": "Extension.extension:NE_Q12_LeftReactPUPIL",
+        "id": "Extension.extension:pupilP_response_right.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "pupilP_response_right"
+      },
+      {
+        "id": "Extension.extension:pupilP_response_right.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:pupilP_response_right.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/PupilPupillaryRes"
+        }
+      },
+      {
+        "id": "Extension.extension:pupilP_response_left",
         "path": "Extension.extension",
-        "sliceName": "NE_Q12_LeftReactPUPIL",
+        "sliceName": "pupilP_response_left",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:NE_Q12_LeftReactPUPIL.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "NE_Q12_LeftReactPUPIL"
+        "id": "Extension.extension:pupilP_response_left.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
-        "id": "Extension.extension:NE_Q13_ArmL",
+        "id": "Extension.extension:pupilP_response_left.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "pupilP_response_left"
+      },
+      {
+        "id": "Extension.extension:pupilP_response_left.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:pupilP_response_left.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/PupilPupillaryRes"
+        }
+      },
+      {
+        "id": "Extension.extension:motor_arm_left",
         "path": "Extension.extension",
-        "sliceName": "NE_Q13_ArmL",
+        "sliceName": "motor_arm_left",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:NE_Q13_ArmL.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "NE_Q13_ArmL"
+        "id": "Extension.extension:motor_arm_left.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
-        "id": "Extension.extension:NE_Q14_ArmR",
+        "id": "Extension.extension:motor_arm_left.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "motor_arm_left"
+      },
+      {
+        "id": "Extension.extension:motor_arm_left.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:motor_arm_left.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/MotorArm"
+        }
+      },
+      {
+        "id": "Extension.extension:motor_arm_right",
         "path": "Extension.extension",
-        "sliceName": "NE_Q14_ArmR",
+        "sliceName": "motor_arm_right",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:NE_Q14_ArmR.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "NE_Q14_ArmR"
+        "id": "Extension.extension:motor_arm_right.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
-        "id": "Extension.extension:NE_Q15_LegL",
+        "id": "Extension.extension:motor_arm_right.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "motor_arm_right"
+      },
+      {
+        "id": "Extension.extension:motor_arm_right.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:motor_arm_right.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/MotorArm"
+        }
+      },
+      {
+        "id": "Extension.extension:motor_leg_left",
         "path": "Extension.extension",
-        "sliceName": "NE_Q15_LegL",
+        "sliceName": "motor_leg_left",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:NE_Q15_LegL.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "NE_Q15_LegL"
+        "id": "Extension.extension:motor_leg_left.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
       },
       {
-        "id": "Extension.extension:NE_Q16_LegR",
+        "id": "Extension.extension:motor_leg_left.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "motor_leg_left"
+      },
+      {
+        "id": "Extension.extension:motor_leg_left.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:motor_leg_left.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/MotorLeg"
+        }
+      },
+      {
+        "id": "Extension.extension:motor_leg_right",
         "path": "Extension.extension",
-        "sliceName": "NE_Q16_LegR",
+        "sliceName": "motor_leg_right",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:NE_Q16_LegR.url",
+        "id": "Extension.extension:motor_leg_right.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:motor_leg_right.url",
         "path": "Extension.extension.url",
-        "fixedUri": "NE_Q16_LegR"
+        "fixedUri": "motor_leg_right"
+      },
+      {
+        "id": "Extension.extension:motor_leg_right.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:motor_leg_right.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://example.org/fhir/fish/ValueSet/MotorLeg"
+        }
       },
       {
         "id": "Extension.url",

@@ -519,7 +519,7 @@
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "Coding"
+            "code": "string"
           }
         ]
       },

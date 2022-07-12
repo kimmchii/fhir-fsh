@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ScoreVerbal",
+  "id": "ScoreVerbal",
+  "title": "ScoreVerbal",
+  "description": "Glasgow coma score verbal",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/ScoreVerbal",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA6557-8",
+            "display": "1 - No verbal response (>2 yrs); no vocal response (<=2 yrs)"
+          },
+          {
+            "code": "LA6558-6",
+            "display": "2 - Incomprehensible sounds"
+          },
+          {
+            "code": "LA6559-4",
+            "display": "3 - Inappropriate words"
+          },
+          {
+            "code": "LA6560-2",
+            "display": "4 - Confused"
+          },
+          {
+            "code": "LA6561-0",
+            "display": "5 - Oriented"
+          }
+        ]
+      }
+    ]
+  }
+}

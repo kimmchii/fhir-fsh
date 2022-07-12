@@ -189,6 +189,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/MotorArm"
+        },
+        "name": "MotorArm",
+        "description": "Motor arm [NIH Stroke Scale]",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/MotorArmL"
         },
         "name": "MotorArmL",
@@ -197,10 +205,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/MotorArmR"
+          "reference": "ValueSet/MotorLeg"
         },
-        "name": "MotorArmR",
-        "description": "Motor arm Right arm [NIH Stroke Scale]",
+        "name": "MotorLeg",
+        "description": "Motor leg [NIH Stroke Scale]",
         "exampleBoolean": false
       },
       {
@@ -213,10 +221,34 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/MotorLegR"
+          "reference": "ValueSet/PupilPupillaryRes"
         },
-        "name": "MotorLegR",
-        "description": "Motor leg Leg - right [NIH Stroke Scale]",
+        "name": "PupilPupLeft",
+        "description": " Pupil Pupillary response",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ScoreEye"
+        },
+        "name": "ScoreEye",
+        "description": "Glasgow coma score eye openingActive",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ScoreMotor"
+        },
+        "name": "ScoreMotor",
+        "description": "Glasgow coma score motor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ScoreVerbal"
+        },
+        "name": "ScoreVerbal",
+        "description": "Glasgow coma score verbal",
         "exampleBoolean": false
       },
       {

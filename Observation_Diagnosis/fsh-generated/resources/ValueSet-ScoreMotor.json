@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ScoreMotor",
+  "id": "ScoreMotor",
+  "title": "ScoreMotor",
+  "description": "Glasgow coma score motor",
+  "version": "0.1.0",
+  "url": "http://example.org/fhir/fish/ValueSet/ScoreMotor",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA6562-8",
+            "display": "1 - No motor response"
+          },
+          {
+            "code": "LA6563-6",
+            "display": "2 - Extension to pain"
+          },
+          {
+            "code": "LA6564-4",
+            "display": "3 - Flexion to pain"
+          },
+          {
+            "code": "LA6565-1",
+            "display": "4 - Withdrawal from pain"
+          },
+          {
+            "code": "LA6566-9",
+            "display": "5 - Localizing pain"
+          },
+          {
+            "code": "LA6567-7",
+            "display": "6 - Obeys commands"
+          }
+        ]
+      }
+    ]
+  }
+}

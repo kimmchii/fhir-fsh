@@ -1,12 +1,12 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "MotorArmR",
-  "id": "MotorArmR",
-  "title": "MotorArmR",
-  "description": "Motor arm Right arm [NIH Stroke Scale]",
+  "name": "MotorArm",
+  "id": "MotorArm",
+  "title": "MotorArm",
+  "description": "Motor arm [NIH Stroke Scale]",
   "version": "0.1.0",
-  "url": "http://example.org/fhir/fish/ValueSet/MotorArmR",
+  "url": "http://example.org/fhir/fish/ValueSet/MotorArm",
   "compose": {
     "include": [
       {

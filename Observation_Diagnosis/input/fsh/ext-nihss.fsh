@@ -1,6 +1,7 @@
 Extension: Nihss
 Id:        Nihss-type
 Title:     "Nihss"
+//LOINC#70182-1
 * extension contains
     consciousness 1..1 and
     LOC_questions 1..1 and
@@ -38,16 +39,16 @@ Title:     "Nihss"
 * extension[facial_palsy].valueCoding from FacialPalsy (required)
 
 * extension[motor_arm_left].value[x] only Coding
-* extension[motor_arm_left].valueCoding from MotorArmL (required)
+* extension[motor_arm_left].valueCoding from MotorArm (required)
 
 * extension[motor_arm_right].value[x] only Coding
-* extension[motor_arm_right].valueCoding from MotorArmR (required)
+* extension[motor_arm_right].valueCoding from MotorArm (required)
 
 * extension[motor_leg_left].value[x] only Coding
-* extension[motor_leg_left].valueCoding from MotorLegL (required)
+* extension[motor_leg_left].valueCoding from MotorLeg (required)
 
 * extension[motor_leg_right].value[x] only Coding
-* extension[motor_leg_right].valueCoding from MotorLegR (required)
+* extension[motor_leg_right].valueCoding from MotorLeg (required)
 
 * extension[ataxia].value[x] only Coding
 * extension[ataxia].valueCoding from Ataxia (required)
@@ -64,8 +65,7 @@ Title:     "Nihss"
 * extension[inattention].value[x] only Coding
 * extension[inattention].valueCoding from Inattention (required)
 
-* extension[totalscore_nihss].value[x] only Coding
-* extension[totalscore_nihss].valueString
+* extension[totalscore_nihss].value[x] only string
 //  LOINC#72089-6 "Total score [NIH stroke scale]"
 
 //  LOINC#70184-7 "Level of consciousness [NIH stroke scale]"
@@ -124,15 +124,19 @@ Description: "Motor arm Left arm [NIH Stroke Scale]"
 * LOINC#LA18460-8 "4 - No movement"
 * LOINC#LA18461-6 "UN - Amputation or joint fusion, explain:"
 //  LOINC#70967-5 "Motor arm Right arm [NIH stroke scale]"
-ValueSet: MotorArmR
-Title: "MotorArmR"
-Description: "Motor arm Right arm [NIH Stroke Scale]"
+
+//*************************************************************
+ValueSet: MotorArm
+Title: "MotorArm"
+Description: "Motor arm [NIH Stroke Scale]"
 * LOINC#LA18456-6 "0 - No drift; limb holds 90 (or 45) degrees for full 10 seconds"
 * LOINC#LA18457-4 "1 - Drift; limb holds 90 (or 45) degrees, but drifts down before full 10 seconds; does not hit bed or other support"
 * LOINC#LA18458-2 "2 - Some effort against gravity; limb cannot get to or maintain (if cued) 90 (or 45) degrees, drifts down to bed, but has some effort against gravity"
 * LOINC#LA18459-0 "3 - No effort against gravity; limb falls"
 * LOINC#LA18460-8 "4 - No movement"
 * LOINC#LA18461-6 "UN - Amputation or joint fusion, explain:"
+//*************************************************************
+
 //  LOINC#70191-2 "Motor leg Left leg [NIH stroke scale]"
 ValueSet: MotorLegL
 Title: "MotorLegL"
@@ -144,15 +148,19 @@ Description: "Motor leg Leg - left [NIH Stroke Scale]"
 * LOINC#LA18460-8 "4 - No movement"
 * LOINC#LA18461-6 "UN - Amputation or joint fusion, explain:"
 //  LOINC#70968-3 "Motor leg Right leg [NIH stroke scale]"
-ValueSet: MotorLegR
-Title: "MotorLegR"
-Description: "Motor leg Leg - right [NIH Stroke Scale]"
+
+//**************************************************************
+ValueSet: MotorLeg
+Title: "MotorLeg"
+Description: "Motor leg [NIH Stroke Scale]"
 * LOINC#LA18462-4 "0 - No drift; leg holds 30-degree position for full 5 seconds"
 * LOINC#LA18463-2 "1 - Drift; leg falls by the end of the 5-second period but does not hit bed"
 * LOINC#LA18464-0 "2 - Some effort against gravity; leg falls to bed by 5 seconds, but has some effort against gravity"
 * LOINC#LA18465-7 "3 - No effort against gravity; leg falls to bed immediately"
 * LOINC#LA18460-8 "4 - No movement"
 * LOINC#LA18461-6 "UN - Amputation or joint fusion, explain:"
+//**************************************************************
+
 //  LOINC#70192-0 "Limb ataxia [NIH stroke scale]"
 ValueSet: Ataxia
 Title: "Ataxia"
