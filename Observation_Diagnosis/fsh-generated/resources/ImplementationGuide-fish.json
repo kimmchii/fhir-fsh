@@ -265,13 +265,6 @@
         "name": "VisualField",
         "description": "Visual [NIH Stroke Scale]",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Observation/Mess"
-        },
-        "name": "Mess",
-        "exampleCanonical": "http://example.org/fhir/fish/StructureDefinition/Observation-Diag"
       }
     ],
     "page": {
