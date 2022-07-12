@@ -1,0 +1,341 @@
+{
+  "resourceType": "Observation",
+  "id": "Mess",
+  "meta": {
+    "profile": [
+      "http://example.org/fhir/fish/StructureDefinition/Observation-Diag"
+    ]
+  },
+  "component": [
+    {
+      "extension": [
+        {
+          "url": "http://example.org/fhir/fish/StructureDefinition/Barthel-type",
+          "extension": [
+            {
+              "url": "feeding",
+              "valueCoding": {
+                "code": "LA12302-8",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "transfer",
+              "valueCoding": {
+                "code": "LA12303-6",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "groom",
+              "valueCoding": {
+                "code": "LA31643-2",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "toilet_use",
+              "valueCoding": {
+                "code": "LA12302-8",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "bath",
+              "valueCoding": {
+                "code": "LA12302-8",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "mobility",
+              "valueCoding": {
+                "code": "LA12302-8",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "stairs",
+              "valueCoding": {
+                "code": "LA24937-7",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "dressing",
+              "valueCoding": {
+                "code": "12302-8",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "bowels",
+              "valueCoding": {
+                "code": "LA31627-5",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "bladder",
+              "valueCoding": {
+                "code": "LA31627-5",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "totalscore_barthel",
+              "valueString": "500"
+            }
+          ]
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "96762-0",
+            "system": "http://loinc.org"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://example.org/fhir/fish/StructureDefinition/Nihss-type",
+          "extension": [
+            {
+              "url": "consciousness",
+              "valueCoding": {
+                "code": "LA18436-8",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "LOC_questions",
+              "valueCoding": {
+                "code": "LA18440-0",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "LOC_command",
+              "valueCoding": {
+                "code": "LA18443-4",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "gaze",
+              "valueCoding": {
+                "code": "LA6626-1",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "visual_field",
+              "valueCoding": {
+                "code": "LA18448-3",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "facial_palsy",
+              "valueCoding": {
+                "code": "LA18452-5",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "motor_arm_left",
+              "valueCoding": {
+                "code": "LA18460-8",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "motor_arm_right",
+              "valueCoding": {
+                "code": "LA18460-8",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "motor_leg_left",
+              "valueCoding": {
+                "code": "LA18464-0",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "motor_leg_right",
+              "valueCoding": {
+                "code": "LA18464-0",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "ataxia",
+              "valueCoding": {
+                "code": "LA9634-2",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "sensory",
+              "valueCoding": {
+                "code": "LA18468-1",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "language",
+              "valueCoding": {
+                "code": "LA18471-5",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "dysarthria",
+              "valueCoding": {
+                "code": "LA18477-2",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "inattention"
+            },
+            {
+              "url": "totalscore_nihss",
+              "valueString": "100"
+            }
+          ]
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "70182-1",
+            "system": "http://loinc.org"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://example.org/fhir/fish/StructureDefinition/Neuro-type",
+          "extension": [
+            {
+              "url": "score_eye",
+              "valueCoding": {
+                "code": "LA6553-7",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "score_verbal",
+              "valueCoding": {
+                "code": "LA6557-8",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "score_motor",
+              "valueCoding": {
+                "code": "LA6562-8",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "score_total",
+              "valueString": "500"
+            },
+            {
+              "url": "temperature",
+              "valueString": "37.5"
+            },
+            {
+              "url": "systolic",
+              "valueString": "120"
+            },
+            {
+              "url": "diastolic",
+              "valueString": "60"
+            },
+            {
+              "url": "respiratory_rate",
+              "valueString": "5"
+            },
+            {
+              "url": "pupilD_manual_right",
+              "valueString": "9"
+            },
+            {
+              "url": "pupilD_manual_left",
+              "valueString": "8"
+            },
+            {
+              "url": "pupilP_response_right",
+              "valueCoding": {
+                "code": "LA25441-9",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "pupilP_response_left",
+              "valueCoding": {
+                "code": "LA24899-9",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "motor_arm_left",
+              "valueCoding": {
+                "code": "LA18464-0",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "motor_arm_right",
+              "valueCoding": {
+                "code": "LA18464-0",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "motor_leg_left",
+              "valueCoding": {
+                "code": "LA18464-0",
+                "system": "http://loinc.org"
+              }
+            },
+            {
+              "url": "motor_leg_right",
+              "valueCoding": {
+                "code": "LA18464-0",
+                "system": "http://loinc.org"
+              }
+            }
+          ]
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "70182-1",
+            "system": "http://loinc.org"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "survey"
+      }
+    ]
+  }
+}
