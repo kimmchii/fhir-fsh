@@ -12,7 +12,7 @@ and the directory that contained with sushi would have structure like this.
 In Observation_Diagnosis, you can put the files in fsh directory from input to your local project and edit it as much as you like. To calibrate the syntax, you can run 
 ```sushi .``` and the result will be like this if there's no errors 
 
-![second.png](inkdrop://file:G-M-H2d83)
+![image2](img/sushi_result.png)
 
 The json files will be generated in resources located in fsh-generated folder and you can post the files to hapi-fhir server by using Postman.  
 [hapi-fhir jpaserver installation](https://github.com/hapifhir/hapi-fhir-jpaserver-starter)
