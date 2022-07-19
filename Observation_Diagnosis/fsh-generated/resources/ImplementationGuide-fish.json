@@ -304,6 +304,13 @@
         },
         "name": "Mess",
         "exampleCanonical": "http://example.org/fhir/fish/StructureDefinition/Observation-Diag"
+      },
+      {
+        "reference": {
+          "reference": "Patient/Pikachuu"
+        },
+        "name": "Pikachuu",
+        "exampleBoolean": true
       }
     ],
     "page": {
