@@ -5,8 +5,7 @@ The purpose for the repository is to modify a profile utilizing in Thailand hosp
 ## Sushi installation
 Since this project is utilized from FSH, hence we should install and initialize it first ([for more information](https://fshschool.org/docs/sushi/installation/))
 and the directory that contained with sushi would have structure like this. 
-<img src="https://raw.githubusercontent.com/kimmchii/fhir-fsh/img/sushi_result.png">
-<br>
+![image1](kimmchii/fhir-fsh/img/structure.png)
 
 
 ## Usage
