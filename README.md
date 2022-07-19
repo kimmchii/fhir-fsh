@@ -5,14 +5,11 @@ The purpose for the repository is to modify a profile utilizing in Thailand hosp
 ## Sushi installation
 Since this project is utilized from FSH, hence we should install and initialize it first ([for more information](https://fshschool.org/docs/sushi/installation/))
 and the directory that contained with sushi would have structure like this. 
-
 ![clipboard.png](inkdrop://file:QGRaGV_1u)
 
 ## Usage
 In Observation_Diagnosis, you can put the files in fsh directory from input to your local project and edit it as much as you like. To calibrate the syntax, you can run 
-```
-sushi .
-```  and the result will be like this if there's no errors 
+```sushi .``` and the result will be like this if there's no errors 
 
 ![clipboard.png](inkdrop://file:G-M-H2d83)
 
@@ -27,3 +24,4 @@ by using the following command line
 hapi-fhir-cli upload-terminology -d Downloads/Loinc_xx.x.zip -v r4 -t http://localhost:8080/fhir/ -u http://loinc.org
 ```
 which xx.x is the version of the file we downloaded
+
