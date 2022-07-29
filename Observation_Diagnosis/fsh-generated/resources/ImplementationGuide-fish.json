@@ -277,14 +277,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/TotalscoreBarthel"
-        },
-        "name": "Totalscore_Barthel",
-        "description": "Total score Barthel Index",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/Transfer"
         },
         "name": "Transfer value",

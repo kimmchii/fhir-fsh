@@ -18,11 +18,11 @@
           },
           {
             "code": "LA31626-7",
-            "display": "1 - Occasional accident"
+            "display": "5 - Occasional accident"
           },
           {
             "code": "LA31625-9",
-            "display": "2 - Continent"
+            "display": "10 - Continent"
           }
         ]
       }

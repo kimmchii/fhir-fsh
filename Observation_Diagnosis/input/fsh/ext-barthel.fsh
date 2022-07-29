@@ -105,22 +105,15 @@ ValueSet: Bowels
 Title: "Bowels"
 Description: "Bowel control - functional ability"
 * LOINC#LA31627-5 "0 - Incontinent (or needs to be given enemas)"
-* LOINC#LA31626-7 "1 - Occasional accident"
-* LOINC#LA31625-9 "2 - Continent"
+* LOINC#LA31626-7 "5 - Occasional accident"
+* LOINC#LA31625-9 "10 - Continent"
 //  LOINC#96760-4 "Bladder"
 ValueSet: Bladder
 Title: "Bladder"
 Description: "Bladder control - functional ability"
 * LOINC#LA31627-5 "0 - Incontinent (or needs to be given enemas)"
-* LOINC#LA31626-7 "1 - Occasional accident"
-* LOINC#LA31625-9 "2 - Continent"
-//  LOINC#96761-2 "Total score Barthel Index"
-ValueSet: TotalscoreBarthel
-Title: "Totalscore_Barthel"
-Description: "Total score Barthel Index"
-* LOINC#LA31627-5 "0 - Incontinent (or needs to be given enemas)"
-* LOINC#LA31626-7 "1 - Occasional accident"
-* LOINC#LA31625-9 "2 - Continent"
+* LOINC#LA31626-7 "5 - Occasional accident"
+* LOINC#LA31625-9 "10 - Continent"
 
 
 
