@@ -292,9 +292,9 @@
       },
       {
         "reference": {
-          "reference": "Observation/Mess"
+          "reference": "Observation/Patient1"
         },
-        "name": "Mess",
+        "name": "Patient1",
         "exampleCanonical": "http://example.org/fhir/fish/StructureDefinition/Observation-Diag"
       },
       {

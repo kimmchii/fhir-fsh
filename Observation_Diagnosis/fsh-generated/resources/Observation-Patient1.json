@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "Mess",
+  "id": "Patient1",
   "meta": {
     "profile": [
       "http://example.org/fhir/fish/StructureDefinition/Observation-Diag"
@@ -339,6 +339,6 @@
     ]
   },
   "subject": {
-    "display": "Mr Pikachuu SSS"
+    "display": "Mr Pratompop Prasertsree"
   }
 }
