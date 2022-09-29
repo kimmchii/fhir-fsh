@@ -299,9 +299,9 @@
       },
       {
         "reference": {
-          "reference": "Patient/Pikachuu"
+          "reference": "Patient/Poptum"
         },
-        "name": "Pikachuu",
+        "name": "Poptum",
         "exampleBoolean": true
       }
     ],
